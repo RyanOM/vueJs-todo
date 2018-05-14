@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  props: ['todos'],
+  props: ['todos']
 }
 </script>
 
