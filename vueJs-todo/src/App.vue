@@ -29,16 +29,16 @@ export default {
   data () {
     return {
       todos: [{
-        title: 'Todo A',
-        project: 'Project A',
+        title: 'Learn Vue.js',
+        project: 'Learning',
         done: false
       }, {
-        title: 'Todo B',
-        project: 'Project B',
+        title: 'Deploy Vue.js Todo app',
+        project: 'Perso Projects',
         done: true
       }, {
-        title: 'Todo C',
-        project: 'Project C',
+        title: 'Add another todo item to the list',
+        project: 'Perso Projects',
         done: false
       }]
     }
