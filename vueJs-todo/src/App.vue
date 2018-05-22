@@ -1,16 +1,28 @@
 <template>
   <div>
+    <h1 class="ui dividing centered header">VueJS Todo App</h1>
     <todo-list v-bind:todos="todos"></todo-list>
+    <create-todo v-on:create-todo="createTodo"></create-todo>
   </div>
 </template>
 
 <script>
 import TodoList from './components/TodoList'
+import CreateTodo from './components/CreateTodo'
+import swal from 'sweetalert'
 
 export default {
   name: 'App',
   components: {
-    TodoList
+    TodoList,
+    CreateTodo
+  },
+
+  methods: {
+    createTodo (newTodo) {
+      this.todos.push(newTodo)
+      swal('Success!', 'To-Do created!', 'success')
+    }
   },
 
   // data to template
