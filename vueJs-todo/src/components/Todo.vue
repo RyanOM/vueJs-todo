@@ -22,11 +22,11 @@
       <div class="ui form">
         <div class="field">
           <label>Title</label>
-          <input type="text" v-model="todo.title">
+          <input type="text" v-model="todo.title" v-on:keyup.enter="hideForm" required>
         </div>
         <div class="field">
           <label>Project</label>
-          <input type="text" v-model="todo.project">
+          <input type="text" v-model="todo.project" v-on:keyup.enter="hideForm" required>
         </div>
         <div class='ui two button attached buttons'>
           <button class='ui basic blue button' v-on:click="hideForm">

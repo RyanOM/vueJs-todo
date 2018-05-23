@@ -11,11 +11,11 @@
         <div class="ui form">
           <div class="field">
             <label>Title</label>
-            <input type="text" v-model="titleText">
+            <input type="text" v-model="titleText" v-on:keyup.enter="hideForm()" required>
           </div>
           <div class="field">
             <label>Project</label>
-            <input type="text" v-model="projectText">
+            <input type="text" v-model="projectText" v-on:keyup.enter="sendForm()" required>
           </div>
         </div>
         <div class="ui two button attached buttons">
